@@ -5,11 +5,11 @@ const Layout = ({ children }) => {
     return (
         <div>
             {
-                window.location.pathname === ("/") ? null : <Index />
+                window.location.pathname === ("/") || ("/login") ? null : window.location.pathname === ('/us') ? <Index /> : null
             }
             {children}
             {
-                window.location.pathname === ("/") ? null : <Footer />
+                window.location.pathname === ("/") || ("/login") ? null : <Footer />
             }
         </div>
     )

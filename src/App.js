@@ -2,10 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import Layout from './Common/Layout';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import FirstPage from './Components/Home/FirstPage';
-import Index from './Common/Header';
+import Index from './Pages/Dashboard/Index.jsx';
 import Step1 from './Components/Stepper/Step1';
 import Main from './Pages/LandingPage/Main';
+import Menubar from './Components/Menubar/Menubar';
+import Step3 from './Components/Stepper/Step3';
+import MainStepper from './Components/Stepper/MainStepper';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
+import MyAccount from './Pages/Dashboard/Component/MyAccount.jsx';
 function App() {
   return (
     <div className="App">
@@ -13,9 +18,13 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={< Main
+            />} >
+            </Route>
+            <Route path='/us' element={< Index />} ></Route>
+            <Route path='/register' element={< Register />} ></Route>
+            <Route path='/login' element={< Login />} ></Route>
+            <Route path='/myaccount' element={< MyAccount />} ></Route>
 
-            />} ></Route>
-            <Route path='/firstpage' element={<  FirstPage />} ></Route>
           </Routes>
         </BrowserRouter>
       </Layout>
