@@ -8,6 +8,8 @@ const Step4 = (props) => {
             <Login />
             <div className="flex gap-56">
                 <button onClick={handleNext}>Next</button>
+                <button onClick={handleNext}>Next</button>
+                <button onClick={handleNext}>Next</button>
             </div>
         </div>
     )
