@@ -16,12 +16,6 @@ const Step2 = (props) => {
             </div>
             <div className='w-full h-full gap-28 flex  -ml-96' style={{ marginLeft: 400 }}>
                 <button className={sameClass} onClick={handleBack}> Back</button>
-                <button className={sameClass} onClick={handleNext}>Next</button>
-                <button className={sameClass} onClick={handleNext}>Next</button>
-                <button className={sameClass} onClick={handleNext}>Next</button>
-                <button className={sameClass} onClick={handleNext}>Next</button>
-                <button className={sameClass} onClick={handleNext}>Next</button>
-               
 
             </div>      
 
