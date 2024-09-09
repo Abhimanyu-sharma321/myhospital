@@ -8,6 +8,7 @@ const Step3 = (props) => {
             <div className="flex gap-56">
                 <button onClick={handleNext}>Next</button>
                 <button onClick={handleBack}>Back</button>
+                <button onClick={handleBack}>Back</button>
             </div>
         </div>
 
