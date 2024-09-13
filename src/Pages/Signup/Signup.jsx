@@ -5,6 +5,15 @@ const Signup = () => {
     return (
         <div>
             <Register />
+            <Register />
+            <Register />
+            <Register />
+            <Register />
+            <Register />
+            <Register />
+            <Register />
+            <Register />
+            <Register />
         </div>
     )
 }
