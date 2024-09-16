@@ -1,0 +1,58 @@
+{
+  "register": [
+    {
+      "id": "8cef",
+      "name": "qd",
+      "lastName": "d",
+      "address": "h",
+      "email": "Abhimanyusharma1892004@gmail.com",
+      "password": "d",
+      "confirmPassWord": "d"
+    },
+    {
+      "id": "cf97",
+      "name": "wqdd",
+      "lastName": "wdqd",
+      "address": "dwqdq",
+      "email": "test@yopmail.om",
+      "password": "Admin123#",
+      "confirmPassWord": "Admin123#"
+    },
+    {
+      "id": "7779",
+      "name": "Abhimanyu  ",
+      "lastName": "sharma",
+      "address": "Kanol",
+      "email": "abhimanyusharma1892004@gmail.com",
+      "password": "Abhimanyu123#",
+      "confirmPassWord": "Abhimanyu123#"
+    },
+    {
+      "id": "822c",
+      "name": "Abhimanyu  ",
+      "lastName": "sharma",
+      "address": "Kanol",
+      "email": "abhimanyusharma1892004@gmail.com",
+      "password": "Abhimanyu123#",
+      "confirmPassWord": "Abhimanyu123#"
+    },
+    {
+      "id": "4987",
+      "name": "Abhimanyu  ",
+      "lastName": "sharma",
+      "address": "Kanol",
+      "email": "abhimanyusharma1892004@gmail.com",
+      "password": "Abhimanyu123#",
+      "confirmPassWord": "Abhimanyu123#"
+    },
+    {
+      "id": "f02e",
+      "name": "Abhimanyu ",
+      "lastName": "sharma",
+      "address": "Kanol",
+      "email": "Abhimanyusharma1892004@gmail.com",
+      "password": "Admin123#",
+      "confirmPassWord": "Admin123#"
+    }
+  ]
+}

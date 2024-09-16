@@ -1,7 +1,8 @@
 import React from 'react'
 import { FaFile, FaFolderClosed } from 'react-icons/fa6'
-import { IoIosContacts, IoIosFilm, IoIosHome } from 'react-icons/io'
+import { IoIosContacts, IoIosFilm, IoIosHome, IoIosPerson } from 'react-icons/io'
 import logo from "../../assets/images/logo.png"
+import { Link } from 'react-router-dom'
 const Menubar = () => {
   return (
     <div className='w-1/2  h-screen '  >
@@ -10,7 +11,14 @@ const Menubar = () => {
           {/* <div> <img src={logo} width={300} height={300} />  </div> */}
         </div>
         <div className='mb-20'>
-          <div> <IoIosHome className='w-52 h-16  hover:text-blue-800 ' /></div>
+          <div>
+
+            <Link to={"/myaccount"} >
+              <IoIosPerson className='w-52 h-16  hover:text-blue-800 ' />
+            </Link>
+
+          </div>
+
         </div>
         <div className='mb-20'>
 
