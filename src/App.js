@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Layout from './Common/Layout';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Index from './Pages/Dashboard/Index.jsx';
+import Step1 from './Components/Stepper/Step1';
+import Main from './Pages/LandingPage/Main';
+import Menubar from './Components/Menubar/Menubar';
+import Step3 from './Components/Stepper/Step3';
+import MainStepper from './Components/Stepper/MainStepper';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
+import MyAccount from './Pages/Dashboard/Component/MyAccount.jsx';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={< Main
+            />} >
+            </Route>
+            <Route path='/us' element={< Index />} ></Route>
+            <Route path='/register' element={< Register />} ></Route>
+            <Route path='/login' element={< Login />} ></Route>
+            <Route path='/myaccount' element={< MyAccount />} ></Route>
+
+          </Routes>
+        </BrowserRouter>
+      </Layout>
     </div>
   );
 }
