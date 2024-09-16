@@ -7,7 +7,7 @@ const Step2 = (props) => {
         <div className='w-full h-screen '>
             <div style={{ marginLeft: 600 }} >
                 <img src={doctorImage} alt='imag' style={{ borderRadius: 400, border: "groove", width: 400, height: 400 }} className='bg-slate-800' />
-                </div>
+            </div>
             <div className='ml-80'>
                 <p className='w-800 text-2xl font-bold mt-16 ml-96' >
 
@@ -18,7 +18,7 @@ const Step2 = (props) => {
                 <button className={sameClass} onClick={handleBack}> Back</button>
                 <button className={sameClass} onClick={handleNext}>Next</button>
 
-            </div>      
+            </div>
 
         </div>
 
