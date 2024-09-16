@@ -15,9 +15,9 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <BrowserRouter>
+        <BrowserRouter  >
           <Routes>
-            <Route path='/' element={< Main
+            <Route path='/' element={< Register 
             />} >
             </Route>
             <Route path='/us' element={< Index />} ></Route>

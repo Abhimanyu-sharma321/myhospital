@@ -28,7 +28,7 @@ const MainStepper = (props) => {
     if (activeStep === 3) {
         return <Step3{...{ handleBack, handleNext }} />
     }
-    if (activeStep === 4) {
+    if(activeStep === 4) {
         return <Step4  {...{ handleBack, handleNext }} />
     }
 

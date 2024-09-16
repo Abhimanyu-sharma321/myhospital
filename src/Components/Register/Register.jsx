@@ -8,9 +8,7 @@ import WithAuthHoc from '../../HOC/WthAuth';
 import { useNavigate } from 'react-router-dom';
 
 const Register = (props) => {
-  const navigate = useNavigate()
-  // const { IsAuthenticate } = props
-  // console.log(IsAuthenticate, "authenticate ")
+  // const navigate = useNavigate()
   const [userDetail, setUserDetail] = useState()
   const formik = useFormik({
     initialValues: {
@@ -42,22 +40,22 @@ const Register = (props) => {
       localStorage.setItem("userDetail", JSON.stringify(values))
       setUserDetail(values)
 
-      handleAdd(values)
+      // handleAdd(values)
     }
   });
 
-  const handleAdd = async (values) => {
+  // const handleAdd = async (values) => {
 
-    try {
-      await axios.post("http://localhost:8000/register", values)
+  //   try {
+  //     await axios.post("http://localhost:8000/register", values)
 
-      navigate('/login')
-    } catch (error) {
-      console.error(error);
+  //     navigate('/login')
+  //   } catch (error) {
+  //     console.error(error);
 
-    }
+  //   }
 
-  }
+  // }
   console.log(userDetail, "userDetail>>>>>>>>>>>")
   return (
 
@@ -107,7 +105,6 @@ const Register = (props) => {
         </div>
 
 
-        {/* new Fields */}
 
 
         <div className="flex gap-20 mb-5  shadow-2xl shadow-slate-100">
@@ -150,7 +147,6 @@ const Register = (props) => {
 
 
 
-          {/* end */}
           <div className="flex gap-20 mb-9  shadow-2xl shadow-slate-100">
             <div>
               <label htmlFor="">Address</label>

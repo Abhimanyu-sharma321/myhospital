@@ -11,7 +11,7 @@ function WithAuthHoc(Component) {
         if (!IsAuthenticate) {
 
             return <ErrorPage />
-        }
+        }   
         else {
             return <Component {...{ IsAuthenticate }} />
 

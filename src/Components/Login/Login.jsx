@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { Formik, useFormik } from 'formik';
-import React, { useEffect, useState } from 'react'
+import React, { useDeferredValue, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import * as Yup from "yup"
 
@@ -24,6 +24,11 @@ const Login = (isAuthenticate) => {
             handleLogin(values)
         }
     });
+
+    const deferedValue = useDeferredValue(formik.values.email)
+
+
+    
     const handleLogin = async (values) => {
         try {
             let res = await axios.get("http://localhost:8000/register")
@@ -41,6 +46,10 @@ const Login = (isAuthenticate) => {
 
         }
     }
+
+
+
+
     return (
         <form action="" onSubmit={formik.handleSubmit} >
             <h2 className='text-center text-4xl text-slate-950 font-extrabold mt-10'> Login </h2>

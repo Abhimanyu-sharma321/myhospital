@@ -1,7 +1,7 @@
 import Register from "../Register/Register"
 
 const Step3 = (props) => {
-         const { handleNext, handleBack } = props
+    const { handleNext, handleBack } = props
     return (
         <div>
             <Register />
