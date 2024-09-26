@@ -20,29 +20,29 @@ const MainStepper = (props) => {
 
 
     if (activeStep === 1) {
-        return <Step1  {...{ handleBack, handleNext }} />
+        return <Step1  {...{ handleBack, handleNext }} />;
     }
     if (activeStep === 2) {
-        return <Step2 {...{ handleBack, handleNext }} />
+        return <Step2 {...{ handleBack, handleNext }} />;
     }
     if (activeStep === 3) {
-        return <Step3{...{ handleBack, handleNext }} />
+        return <Step3{...{ handleBack, handleNext }} />;
     }
     if(activeStep === 4) {
-        return <Step4  {...{ handleBack, handleNext }} />
-    }
+        return <Step4  {...{ handleBack, handleNext }} />;
+    };
 
     return (
         <div className='mt-96 ml-96'>
 
-            <div className='flex gap-10 ml-96'>
+            {/* <div className='flex gap-10 ml-96'>
 
                 <button onClick={handleNext} className='w-52 h-10 border border-black bg-sky-950 text-white font-mono hover:bg-white hover:text-black '>Next</button>
                 <button onClick={handleBack}
-
                     className='w-52 h-10 border border-black bg-sky-950 text-white font-mono hover:bg-white hover:text-black '
                 >Back</button>
-            </div>
+            </div> */}
+
         </div>
     )
 }

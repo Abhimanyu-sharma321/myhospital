@@ -11,14 +11,15 @@ import MainStepper from './Components/Stepper/MainStepper';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import MyAccount from './Pages/Dashboard/Component/MyAccount.jsx';
+import Book from './Pages/Dashboard/Book.jsx';
 function App() {
   return (
     <div className="App">
       <Layout>
         <BrowserRouter  >
           <Routes>
-            <Route path='/' element={< Register 
-            />} >
+            <Route path='/' element={<  MainStepper />
+            } >
             </Route>
             <Route path='/us' element={< Index />} ></Route>
             <Route path='/register' element={< Register />} ></Route>

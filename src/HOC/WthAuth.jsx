@@ -1,24 +1,25 @@
+import Register from "../Components/Register/Register"
 import { ErrorPage } from "../Pages/Error/ErrorPage"
 
 function WithAuthHoc(Component) {
 
     function WithHocProps(props) {
 
-        let IsAuthenticate = localStorage.getItem("token")
+            // let IsAuthenticate = localStorage.getItem("token")
 
-        console.log(IsAuthenticate, "authenticate>>>>>>>>>>>>>")
+            // console.log(IsAuthenticate, "authenticate>>>>>>>>>>>>>")
 
-        if (!IsAuthenticate) {
+            // if (!IsAuthenticate) {
 
-            return <ErrorPage />
-        }   
-        else {
-            return <Component {...{ IsAuthenticate }} />
+            //     return < Register />
+            // }
+            // else {
+            //     return <Component {...{ IsAuthenticate }} />
+
+            // }
+
 
         }
-
-
-    }
 
 
     return WithHocProps;
@@ -26,4 +27,4 @@ function WithAuthHoc(Component) {
 }
 
 
-export default WithAuthHoc
+export default WithAuthHoc;

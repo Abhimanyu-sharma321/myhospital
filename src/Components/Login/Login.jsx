@@ -25,7 +25,6 @@ const Login = (isAuthenticate) => {
         }
     });
 
-    const deferedValue = useDeferredValue(formik.values.email)
 
 
     
@@ -34,6 +33,7 @@ const Login = (isAuthenticate) => {
             let res = await axios.get("http://localhost:8000/register")
             setUserInfo(res?.data)
             const CREDENTIAL = userInfo?.map((item) => item.email === values?.email && item?.password === values?.password)
+            localStorage.setItem("info", JSON.stringify(CREDENTIAL))
 
             let token = "ajhduieh4iervdwqdhuijhdwqwdjhbjwdbjhiowhvbdwqvdhjbjBqBDJHBWQJHDBHWDHWJQVBDHJUY2GWDVQHWDvqvv"
             if (CREDENTIAL) {

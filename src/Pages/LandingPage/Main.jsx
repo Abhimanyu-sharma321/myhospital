@@ -7,7 +7,6 @@ const Main = () => {
     return (
         <div className='w-full h-full'>
             <MainStepper />
-
         </div>
     )
 }
