@@ -36,27 +36,28 @@ const Register = (props) => {
     }),
 
     onSubmit: values => {
-      console.log(values, "values")
-      localStorage.setItem("userDetail", JSON.stringify(values))
-      setUserDetail(values)
 
-      handleAdd(values)
+      console.log(values, "values")
+      // localStorage.setItem("userDetail", JSON.stringify(values))
+      // setUserDetail(values)
+
+      // handleAdd(values)
     }
   });
 
-  const handleAdd = async (values) => {
+  // const handleAdd = async (values) => {
+  //   console.log(values, "before try block>>>>>>>>>")
+  //   try {
+  //     await axios.post("http://localhost:8000/register", values)
 
-    try {
-      await axios.post("http://localhost:8000/register", values)
+  //     // navigate('/login')
+  //     console.log(values)
+  //   } catch (error) {
+  //     console.error(error);
 
-      // navigate('/login')
-      console.log(values)
-    } catch (error) {
-      console.error(error);
+  //   }
 
-    }
-
-  }
+  // }
   console.log(userDetail, "userDetail>>>>>>>>>>>")
 
   return (
